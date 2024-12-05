@@ -1,0 +1,19 @@
+USAGE_EXAMPLES = {
+    'Basic_Encoding': {
+        'input': 'HELLO',
+        'calculation': '37 × 6,993',
+        'result': '#258741',
+        'validation': 'symbol + value check'
+    },
+    
+    'Complete_Message': {
+        'input': 'HELLO WORLD',
+        'encoded': '#258741$86160753',
+        'structure': [
+            'Initialize with #',
+            'First word value',
+            'Space separator $',
+            'Second word value'
+        ]
+    }
+}

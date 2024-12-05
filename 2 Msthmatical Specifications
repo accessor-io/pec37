@@ -1,0 +1,24 @@
+MATH_SPECS = {
+    'Base37_Calculations': {
+        'Character_Encoding': {
+            'formula': 'char_value = (ASCII - 65) * (37 ^ position)',
+            'constraints': {
+                'valid_chars': 'A-Z, 0-9',
+                'max_length': '8 characters',
+                'position_range': '0-7'
+            }
+        },
+        'Pattern_Generation': {
+            'word_value': 'sum(char_values)',
+            'block_value': 'symbol + word_value + separator',
+            'validation': 'checksum = word_value % 37'
+        }
+    },
+
+    'Processing_Limits': {
+        'max_value': 999999999,
+        'max_word_length': 8,
+        'max_block_size': 12,
+        'max_message_length': 1000
+    }
+}
